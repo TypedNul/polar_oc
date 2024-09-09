@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>polar</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<section id='arrastavel'>
+		<section class='painel'> 
+			<div id='musica-secao'> 
+				<p id='tocando-texto'> t o c a n d o . . .</p>
+				<p id="musica-autor">half·alive</p>
+				<h2 id="musica-titulo">creature</h2>
+			</div>
+			
+			<audio id="musica-audio" src="database/soundtrack/creature.mp3" preload="metadata"></audio>
+			
+			<div>
+			
+				<button class='botao-musica' id='botao-musica-anterior' onclick='anteriorMusica()'></button>
+				<button class='botao-musica' id='botao-musica-proxima' onclick='proximaMusica()'></button>
+				<button class='botao-musica' id='botao-musica-pausar' onclick='pausarMusica()'> </button>
+
+				<button class='botao-musica' id='botao-musica-volume'></button>
+				
+				<input type="range" class='seeker' id="musica-seek" min="0" value="0" step="1">
+				<input type="range" class='seeker' id="volume-seek" min="0" max="1" step='0.01' orient="vertical"> 
+			</div>
+		</section>
+	</section>
+
+</body>
+</html>

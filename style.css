@@ -1,0 +1,127 @@
+.painel {
+    width: 250px;  
+    height: 100px; 
+    
+	position: relative;
+	
+    background: linear-gradient(to bottom, #000000, #333333); 
+    
+    border-radius: 15px; 
+    border: 2px solid rgba(255, 255, 255, 0.7); 
+    
+    padding: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+
+}
+
+#arrastavel {
+	position: absolute;
+	cursor: move;
+}
+
+.botao-musica {
+	position: absolute;
+	bottom: 15px;
+
+	width: 24px; 
+    height: 24px; 
+    
+	background-size: cover; 
+    background-repeat: no-repeat; 
+	background-color: transparent;
+    
+	border: none;
+	
+	cursor: pointer; 
+}
+
+.botao-musica:hover {
+	width: 26px;
+	height: 26px;
+}
+
+#botao-musica-anterior { background-image: url('database/assets/music/buttonMusicBack.png');
+	left: 14px;
+}
+
+#botao-musica-pausar { background-image: url('database/assets/music/buttonMusicPaused.png');
+	left: 40px;
+}
+
+#botao-musica-proxima { background-image: url('database/assets/music/buttonMusicNext.png');
+	right: 35px;
+}
+
+#botao-musica-volume { background-image: url('database/assets/music/buttonMusicVolume2.png');
+	right: 7px;
+}
+
+
+#musica-seek {
+	position: absolute;
+	
+	bottom: 17px;
+	left: 65px;
+	
+	width: 100%;
+	max-width: 140px;
+}
+
+#volume-seek {
+	position: absolute;
+	
+	bottom: 40px;
+	right: 10px;
+	
+	height: 60px;
+	
+}
+
+#musica-secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    gap: 0px; 
+    text-align: center; 
+}
+
+/* Texto "t o c a n d o . . ." */
+#tocando-texto {
+    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0; 
+}
+
+/* Texto do autor da música */
+#musica-autor {
+    font-size: 15px;
+    font-family: 'Georgia', serif;
+    font-style: italic; 
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0; 
+}
+
+/* Título da música */
+#musica-titulo {
+    font-size: 20px;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;	
+    color: white;
+    margin: 0; 
+}
+
+input[type=range][orient=vertical] {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    appearance: slider-vertical;
+    width: 16px;
+    vertical-align: bottom;
+}
+
